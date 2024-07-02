@@ -1,0 +1,10 @@
+.gallery-image {
+  height: 100%;
+}
+.gallery {
+  margin: 24px auto;
+  max-width: 1140px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
