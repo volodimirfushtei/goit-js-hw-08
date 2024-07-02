@@ -79,7 +79,7 @@ images.forEach((image) => {
   img.src = image.preview;
   img.setAttribute("data-source", image.original);
   img.alt = image.description;
-  img.alt = img.style.width = `360px`;
+  img.style.width = `360px`;
   img.style.height = `200px`;
   img.addEventListener("mouseover", function () {
     this.style.transform = "scale(1.04)";
