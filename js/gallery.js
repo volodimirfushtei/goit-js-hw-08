@@ -66,7 +66,8 @@ const images = [
 const gallery = document.querySelector("ul.gallery");
 gallery.style.cssText = `display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;`;
+  gap: 24px 24px;
+  flex-direction: row;`;
 
 const fragment = document.createDocumentFragment();
 images.forEach((image) => {
@@ -90,7 +91,8 @@ images.forEach((image) => {
   a.addEventListener("click", (event) => {
     event.preventDefault();
   });
-  a.appendChild(img);
+  a.appendChild(li);
+  li.appendChild(img);
   fragment.appendChild(a);
 });
 gallery.appendChild(fragment);
